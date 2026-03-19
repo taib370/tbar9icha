@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>tbargicha</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:black;
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* main container */
+
+.main{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.container{
+max-width:700px;
+width:100%;
+}
+
+/* title */
+
+h1{
+font-size:50px;
+line-height:1.2;
+font-weight:700;
+margin-bottom:20px;
+}
+
+/* small text */
+
+p{
+color:#bfbfbf;
+font-size:18px;
+margin-bottom:40px;
+}
+
+/* button */
+
+.btn{
+display:inline-block;
+padding:16px 50px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:600;
+background:linear-gradient(90deg,#ff4d00,#ff0066);
+transition:0.3s;
+}
+
+.btn:hover{
+opacity:0.9;
+}
+.insta{
+display:inline-block;
+padding:16px 50px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:600;
+background:linear-gradient(90deg,#ff4d00,#ff0066);
+transition:0.3s;
+}
+.insta:hover{
+opacity:0.9;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:20px;
+border-top:1px solid #222;
+font-size:14px;
+color:#888;
+}
+
+footer a{
+color:#aaa;
+text-decoration:none;
+margin:0 10px;
+}
+
+footer a:hover{
+color:white;
+}
+/* hero badge (top message) */
+.hero-badge{
+        display:inline-block;
+        margin:0 0 20px 0;
+        font-size:48px;
+        line-height:1;
+        padding:8px 14px;
+        border-radius:12px;
+        background: linear-gradient(90deg,#ff4d00,#ff0066,#7b61ff,#00d4ff);
+        background-size:200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 8px 24px rgba(128,0,64,0.12), 0 2px 6px rgba(255,77,0,0.06);
+        animation: gradientShift 4s linear infinite, floaty 4s ease-in-out infinite;
+}
+
+@keyframes gradientShift{
+    0%{background-position:0% 50%}
+ 50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+@keyframes floaty{
+    0%{transform:translateY(0)}
+ 50%{transform:translateY(-6px)}
+ 100%{transform:translateY(0)}
+}
+.note{
+    margin-top:60px;
+    font-size: 30px;
+}
+/* responsive */
+
+@media (max-width:600px){
+
+h1{
+font-size:34px;
+}
+
+p{
+font-size:16px;
+}
+
+.btn{
+width:100%;
+padding:16px;
+}
+.insta{
+    width: 100%;
+    margin-top: 20px;
+}
+.hero-badge{
+    font-size:50px;
+    padding:8px 12px;
+}
+
+/* codes button and note */
+.codes-btn{
+    margin:12px 12px 0 12px;
+}
+.note{
+    margin-top:13px;
+    color:#ffb3b3;
+    font-size:14px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="container">
+<span class="hero-badge">تبرقيشة تتمني لكم عيد سعيد </span>
+<h1>
+"tbar9icha" launch soon
+</h1>
+
+<p>
+Find up-to-date information in our Help Center.
+</p>
+
+    <a href="#" class="btn" onclick="document.location='more.html'">
+    Learn more
+    </a>
+
+    <a href="codes.html" class="btn codes-btn">promo codes</a>
+
+    <a href="https://www.instagram.com/tbar9icha_tunisian?igsh=cGVhbmp1M3F6ODhn" class="insta">instagram</a>
+
+    <p class="note">ملاحظة: الكودات صالحة لعشرة أشخاص</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<a href="#">Privacy</a>
+|
+<a href="#">Policy</a>
+
+</footer>
+
+</body>
+</html>
