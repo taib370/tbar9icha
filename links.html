@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>اكواد الخصومات - tbar9icha</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:black;
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+.parent{
+    border: 2px solid rgb(46, 46, 48);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:14px;
+    width: 90%;
+    height: 300px;
+    max-width:420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:18px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.6);
+}
+.btn{
+padding:12px 20px;
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-weight:700;
+background:linear-gradient(90deg,#ff4d00,#ff0066);
+transition:transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+display:inline-flex;
+align-items:center;
+gap:10px;
+box-shadow:0 6px 18px rgba(255,0,102,0.12), inset 0 -2px 6px rgba(0,0,0,0.15);
+}
+.btn .icon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px}
+.btn:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(255,0,102,0.16)}
+.btn:active{transform:translateY(-1px)}
+.btn.secondary{background:linear-gradient(90deg,#0056ff,#00c6ff);}
+.actions{display:flex;gap:14px;justify-content:center;align-items:center}
+@media (max-width:480px){
+    .parent{width:94%;padding:14px}
+    .actions{flex-direction:column;width:100%}
+    .btn{width:100%;justify-content:center;padding:12px 14px}
+}
+body{padding-bottom:70px}
+footer{position:fixed;bottom:0;left:0;width:100%;text-align:center;padding:12px 18px;border-top:1px solid #222;color:#888;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.15))}
+</style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="actions" role="group" aria-label="روابط الموقع">
+            <a href="#" class="btn" onclick="document.location='more.html'" aria-label="موقع الشراء">
+                <span class="icon" aria-hidden="true">
+                    <!-- cart SVG -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="10" cy="20" r="1.6" fill="white"/>
+                        <circle cx="18" cy="20" r="1.6" fill="white"/>
+                    </svg>
+                </span>
+                موقع الشراء
+            </a>
+
+            <a href="#" class="btn secondary" onclick="document.location='codes.html'" aria-label="استراد الأكواد">
+                <span class="icon" aria-hidden="true">
+                    <!-- ticket SVG -->
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10V6a2 2 0 0 0-2-2h-4M3 14v4a2 2 0 0 0 2 2h4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 8a2 2 0 0 1-2-2M3 16a2 2 0 0 0 2 2" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="6" y="7" width="12" height="10" rx="2" stroke="white" stroke-width="1.4"/>
+                    </svg>
+                </span>
+                استراد الأكواد
+            </a>
+        </div>
+    </div>
+    <footer>شكرا لزيارتكم موقعنا-tbar9icha</footer>
+</body>
+</html>
